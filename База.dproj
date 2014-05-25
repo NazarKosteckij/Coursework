@@ -3,7 +3,7 @@
         <ProjectGuid>{36F6BB56-E8E1-439C-AFD9-CB2C1F37FC74}</ProjectGuid>
         <ProjectVersion>15.1</ProjectVersion>
         <FrameworkType>VCL</FrameworkType>
-        <MainSource>Project1.dpr</MainSource>
+        <MainSource>База.dpr</MainSource>
         <Base>True</Base>
         <Config Condition="'$(Config)'==''">Debug</Config>
         <Platform Condition="'$(Platform)'==''">Win32</Platform>
@@ -87,6 +87,10 @@
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="Unit2.pas"/>
+        <DCCReference Include="Unit3.pas">
+            <Form>AboutBox</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -155,7 +159,7 @@
                     <VersionInfoKeys Name="theme"/>
                 </VersionInfoKeys>
                 <Source>
-                    <Source Name="MainSource">Project1.dpr</Source>
+                    <Source Name="MainSource">База.dpr</Source>
                 </Source>
             </Delphi.Personality>
             <Deployment/>
